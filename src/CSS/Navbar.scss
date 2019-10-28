@@ -1,0 +1,53 @@
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    background:black;
+    padding: 25px 40px;
+    z-index: 5;
+    box-shadow: 0px 0px 7px black;
+
+    .logo {
+        cursor: pointer;
+        img{
+            height: 40px
+        }
+    }
+    .search-bar {
+        i{
+            color: white;
+            padding:7px ;
+        }
+
+        input{
+            border-style: none;
+            border-radius: 30px;
+            padding: 7px 15px;
+            background: rgba(70, 68, 68, 0.7);
+            color: white;
+            width: 150px;
+            transition: .5s width;
+            &:focus {
+                width: 250px;
+            }
+        }
+    }
+}
+
+// Navbar (right side)
+nav {
+    ul{
+        li{
+            display: inline-block;
+            list-style: none;
+            a{
+                padding: 8px; 
+                color: white;
+                i{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

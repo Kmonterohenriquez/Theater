@@ -1,0 +1,74 @@
+.Login-bg {
+  background: red;
+  z-index: 99999;
+}
+
+.LoginForm-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 60px 30px;
+  border-bottom: #C72C41 4px solid;
+}
+
+.LoginForm-container .user-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.LoginForm-container button {
+  color: #C72C41;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.LoginForm-container button:hover {
+  background: #C72C41;
+  color: white;
+}
+
+.LoginForm-container .rounded-btn {
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.LoginForm-container .Login-setup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.LoginForm-container .Login-setup p span {
+  color: #C72C41;
+}
+
+.LoginForm-container .Login-setup p span a {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  font-weight: bold;
+  color: #C72C41;
+}
+
+.LoginForm-container .Login-setup p span a:hover {
+  color: #dd6373;
+}
+/*# sourceMappingURL=Login.css.map */

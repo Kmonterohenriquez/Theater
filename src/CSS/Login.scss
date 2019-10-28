@@ -1,0 +1,57 @@
+
+.Login-bg {
+    background:red;
+    z-index: 99999;
+    
+}
+.LoginForm-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 60px 30px;
+    border-bottom: $red 4px solid;
+    
+    .user-icon{
+        display: flex;
+        font-size: 70px;
+        justify-content: center;
+    }
+    
+    button{
+        color:$red;
+        transition: all .3s;
+     &:hover{
+         background:$red;
+         color: white;
+     }   
+    }
+        .rounded-btn{
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+    
+    .Login-setup{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        p{
+            
+            span {
+                color: $red;
+                a{
+                    transition: color .3s;
+                    font-weight: bold;
+                    color: $red;
+                    &:hover{
+                        color: lighten($red, 15%);
+                    }
+                }
+            }
+        }
+    }    
+}

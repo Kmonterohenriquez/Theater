@@ -1,0 +1,30 @@
+.Btn-container {
+    width: 100%;
+    background: #2d132c;
+}
+.Btn {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-gap: 20px;
+    padding: 60px 0;
+
+    button{
+        border: linear-gradient(to right, transparent, black) solid 2px;
+        border-style: none;
+        border-radius: 5px;
+        padding: 15px 20px;
+        color: white;
+        font-size: 1rem;
+        font-weight: 540;
+        letter-spacing: 2px;
+        background: #801336;
+        cursor: pointer;
+        transition: .5s ease;
+        box-shadow: 1px 1px 4px black, 2px 2px 5px #801336;
+
+        &:hover{
+            transform: scale(0.97);
+            background: lighten(#801336, 5%);
+        }
+    }
+}
