@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from './Pages/Home';
 import Login from './Pages/Login';
 import Signup from './Pages/Signup';
+import Movie from './Components/Movie'
 
 // Add Mdbootstrap Style  //
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -20,6 +21,8 @@ class  App extends Component {
           <Route exact path='/' component={ Home } />
           <Route exact path='/login' component={ Login } />
           <Route exact path='/signup' component={ Signup } />
+          {/* <Route path ='/movie/:id' component = {Movie} /> */}
+          <Route path='/movie/:id' render={props => <Movie {...props}/>} />
     </Router>
 
   )}

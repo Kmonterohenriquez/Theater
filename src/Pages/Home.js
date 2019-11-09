@@ -5,15 +5,18 @@ import Btns from '../Components/Btns';
 import Section from '../Components/Section';
 import ContactUs from '../Components/ContactUs';
 import Footer from '../Components/Footer';
+import {Link} from 'react-router-dom'
 
 import '../CSS/Home.css';
 class Home extends Component {
     render(){
+        console.log(this.props)
         return(
             <div className='Home'>
                 <Navbar />
                 <Showcase />
                 <Btns />
+                <Link to={`/movie/${movie.id}`}>
                 <div className='gSection-container'>
                     {/* <Test /> */}
                     <Section sTitle='upcoming'/>
@@ -21,6 +24,7 @@ class Home extends Component {
                     <Section sTitle='now playing'/> 
                     <Section sTitle='top rated'/>
                 </div>
+                </Link>
                 <Footer />
             </div>
         )
